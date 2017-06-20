@@ -1,0 +1,31 @@
+{
+  "name": "guice.js",
+  "version": "1.0.6",
+  "description": "the nodejs guice like depend injection library",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "tsc -p .",
+    "dev": "mocha-typescript-watch dist/test config"
+  },
+  "dependencies": {
+    "config": "^1.25.1",
+    "log4js": "^1.1.1",
+    "@types/config": "^0.0.32",
+    "@types/log4js": "0.0.32",
+    "typescript-collections": "^1.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-plugin-node": "^4.2.1",
+    "mocha": "^3.2.0",
+    "mocha-typescript": "^1.0.23",
+    "nodemon": "^1.11.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

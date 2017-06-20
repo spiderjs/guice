@@ -1,0 +1,15 @@
+{
+    "root": "./dist",
+    "modules": {
+        "testA": {
+            "singleton": true,
+            "module": "./test/testA"
+        },
+        "testB": {
+            "module": "./test/testB",
+            "inject": [
+                "testA"
+            ]
+        }
+    }
+}
